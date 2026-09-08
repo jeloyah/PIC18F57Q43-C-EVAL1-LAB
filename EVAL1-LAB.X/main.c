@@ -9,19 +9,19 @@ void main(void) {
     /* Peripheral and System Initialization*/
       
     /* PortA initialization */
-    PortA_Initialize();
+    
     
     /* PortB initialization */
-    PortB_Initialize();
+    
     
     /* PortC initialization */
-    PortC_Initialize();
+    
     
     /* PortD initialization */
-    PortD_Initialize();
+    
     
     /* PortE initialization */
-    PortE_Initialize();
+    
     
     /* PortF initialization */
     PortF_Initialize();
@@ -32,7 +32,7 @@ void main(void) {
     /* infinite loop */
     while(1)
     {
-     switch(PORTD)   /* Read input port */
+     switch(PORTx)   /* Read input port register */
      {
          case 0xF0:     
              
@@ -40,31 +40,31 @@ void main(void) {
             
              break;
          
-         case 0x70:     
+         case 0x00:     
              
-             Secuencia1(); /* Secuencia1 */           
+                      /* Secuencia1 */           
             
              break;
          
-         case 0xB0:       
+         case 0x00:       
             
-             Secuencia2(); /* Secuencia2 */           
+                      /* Secuencia2 */           
             
              break;
              
-         case 0xC0:       
+         case 0x00:       
             
-             Secuencia3();  /* Secuencia3 */           
+                     /* Secuencia3 */           
           
              break;
          
-         case 0x50:      
+         case 0x00:      
             
-             Secuencia4();   /* Secuencia4 */           
+                     /* Secuencia4 */           
           
              break;
          
-         default:        /* Todas las dem·s combinaciones */
+         default:        /* Todas las dem√°s combinaciones */
              
              
              
