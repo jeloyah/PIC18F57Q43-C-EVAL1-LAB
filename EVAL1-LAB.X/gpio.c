@@ -28,10 +28,10 @@ void PortB_Initialize(void)
     ANSELB = 0x00;
     
     /* Disable Rpull-ups */
-    WPUB = 0x00;
+    WPUx = 0x00;
         
     /* RB7:RB0 as output */
-    TRISB = 0x00;
+    TRISx = 0x00;
 }
 
 /* PortC initialization */
@@ -44,10 +44,10 @@ void PortC_Initialize(void)
     ANSELC = 0x00;
     
     /* Disable Rpull-ups */
-    WPUC = 0x00;
+    WPUx = 0x00;
         
     /* RC7:RC0 as output */
-    TRISC = 0x00;
+    TRISx = 0x00;
 }
     
 /* PortD initialization */
@@ -60,10 +60,10 @@ void PortD_Initialize(void)
     ANSELD = 0x00;
     
     /* Disable Rpull-ups */
-    WPUD = 0xFF;
+    WPUx = 0xFF;
         
     /* RD7:RD0 as output */
-    TRISD = 0xFF;
+    TRISx = 0xFF;
 }
 
 /* PortE initialization */
@@ -76,10 +76,10 @@ void PortE_Initialize(void)
     ANSELE = 0x00;
     
     /* Disable Rpull-ups */
-    WPUE = 0xFF;
+    WPUx = 0xFF;
         
     /* RE3:RE0 as output */
-    TRISE = 0xFF;
+    TRISx = 0xFF;
 }    
 
 /* PortF initialization */
@@ -92,8 +92,8 @@ void PortF_Initialize(void)
     ANSELF = 0x00;
     
     /* Disable Rpull-ups */
-    WPUF = 0x00;
+    WPUx = 0x00;
         
     /* PortF as output */
-    TRISF = 0x00;
+    TRISx = 0x00;
 }
